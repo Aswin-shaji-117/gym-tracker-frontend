@@ -24,8 +24,8 @@ import {
 } from "recharts";
 import Login from "./login.jsx";
 import "./styles.css";
-
-const API = import.meta.env.VITE_API_URL || "http://127.0.0.1:4545";
+import API_BASE_URL from "./services/api.js";
+const API = import.meta.env.VITE_API_URL || API_BASE_URL;
 
 const DAYS = [
   "Monday",

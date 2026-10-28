@@ -2,8 +2,9 @@
 import React, { useState } from "react";
 import { Dumbbell, Mail, Lock, Eye, EyeOff, ArrowRight } from "lucide-react";
 import "./Login.css";
+import API_BASE_URL from "./services/api.js";
 
-const API = import.meta.env.VITE_API_URL || "http://127.0.0.1:4545";
+const API = import.meta.env.VITE_API_URL || API_BASE_URL;
 
 export default function Login({ onLogin }) {
   const [mode, setMode] = useState("login");
