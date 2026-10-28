@@ -1,0 +1,267 @@
+
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  background: #0b1013;
+  color: #eef2f1;
+  font-family: "DM Sans", sans-serif;
+}
+
+.login-decoration {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background:
+    radial-gradient(ellipse at 70% 30%, #263c2b 0%, transparent 55%),
+    #10181b;
+  border-right: 1px solid #27333a;
+}
+
+.login-logo {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  background: #b8f36b;
+  color: #10160d;
+  border-radius: 13px;
+  margin-bottom: 35px;
+}
+
+.login-eyebrow {
+  color: #b8f36b;
+  font: 10px "DM Mono", monospace;
+  letter-spacing: 2px;
+}
+
+.login-decoration h1 {
+  font: 800 clamp(35px, 4vw, 60px)/1.12 Manrope, sans-serif;
+  letter-spacing: -2px;
+  margin: 22px 0;
+}
+
+.login-decoration h1 span {
+  color: #b8f36b;
+}
+
+.login-decoration > p {
+  max-width: 390px;
+  color: #9aa8a6;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.login-stats {
+  display: flex;
+  gap: 35px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.login-stats div {
+  display: grid;
+  gap: 7px;
+}
+
+.login-stats strong {
+  color: #b8f36b;
+  font: 22px "DM Mono", monospace;
+}
+
+.login-stats span {
+  color: #84918f;
+  font: 9px "DM Mono", monospace;
+  letter-spacing: 1px;
+}
+
+.login-side {
+  display: grid;
+  place-items: center;
+  padding: 35px 24px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 410px;
+}
+
+.login-card h2 {
+  margin: 13px 0 8px;
+  font: 700 30px Manrope, sans-serif;
+  letter-spacing: -1px;
+}
+
+.login-subtitle {
+  color: #8d9b9e;
+  font-size: 13px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.login-card form {
+  display: grid;
+  gap: 20px;
+}
+
+.login-field {
+  display: grid;
+  gap: 9px;
+}
+
+.login-field > span {
+  color: #a6b2b4;
+  font: 10px "DM Mono", monospace;
+  letter-spacing: 1px;
+}
+
+.login-field input {
+  min-width: 0;
+  width: 100%;
+  background: #11191e;
+  color: #eef2f1;
+  border: 1px solid #2b393f;
+  border-radius: 9px;
+  padding: 13px;
+  outline: none;
+  font-size: 13px;
+}
+
+.login-field input:focus {
+  border-color: #b8f36b;
+}
+
+.login-input-wrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 12px;
+  background: #11191e;
+  border: 1px solid #2b393f;
+  border-radius: 9px;
+  color: #7e8e92;
+}
+
+.login-input-wrap:focus-within {
+  border-color: #b8f36b;
+}
+
+.login-input-wrap input {
+  border: 0;
+  background: transparent;
+  padding-left: 0;
+}
+
+.login-input-wrap input:focus {
+  border: 0;
+}
+
+.password-toggle {
+  display: grid;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: #89979b;
+  padding: 10px;
+}
+
+.login-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 14px;
+  margin-top: 4px;
+  background: #b8f36b;
+  color: #10160d;
+  border: 0;
+  border-radius: 9px;
+  font: 700 11px "DM Mono", monospace;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.login-submit:hover {
+  background: #c9ff88;
+}
+
+.login-submit:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.login-error {
+  background: #321e20;
+  border: 1px solid #704044;
+  color: #ffaaaa;
+  padding: 11px;
+  border-radius: 8px;
+  font-size: 12px;
+  overflow-wrap: anywhere;
+}
+
+.login-switch {
+  margin-top: 24px;
+  text-align: center;
+  color: #8d9b9e;
+  font-size: 12px;
+}
+
+.login-switch button {
+  background: transparent;
+  border: 0;
+  color: #b8f36b;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login-footer {
+  margin-top: 50px;
+  text-align: center;
+  color: #657477;
+  font: 9px "DM Mono", monospace;
+  letter-spacing: 1.5px;
+}
+
+.login-footer span {
+  color: #b8f36b;
+}
+
+.mobile-logo {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .login-page {
+    grid-template-columns: 1fr;
+  }
+
+  .login-decoration {
+    display: none;
+  }
+
+  .login-side {
+    min-height: 100vh;
+    padding: 28px 22px;
+  }
+
+  .mobile-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 38px;
+    font: 800 12px Manrope, sans-serif;
+    letter-spacing: 1px;
+  }
+
+  .mobile-logo .login-logo {
+    margin: 0;
+    width: 38px;
+    height: 38px;
+  }
+
+  .login-card h2 {
+    font-size: 27px;
+  }
+}
